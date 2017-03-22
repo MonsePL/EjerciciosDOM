@@ -12,18 +12,24 @@
 	<p id="parrafo">Culpa placeat cum enim inventore asperiores unde sit fugiat ea aliquam modi esse nostrum magni, eum, repellendus sint at aperiam hic dolorum!</p>
 	<span class="mensaje"></span>
 	<img src="http://lorempixel.com/output/city-q-c-301-301-9.jpg" alt="" class="mensaje">
+	<p id = "msj"> hola </p>
 
 
 	<script>
 		//Escribe aquí tu código Javascript
-		function myFunction() {
-		    var clase = document.getElementsByClassName("mensaje");
-        var nodeelementos = clase.lenght
+		var clase = document.getElementsByClassName("mensaje");
+	  var nodeelementos = clase.lenght
 
-		if ( clase == 1 )	 
-
+		function mensaje() {
+			if ( nodeelementos == 1 ){
+				document.getElementById("msj").innerHTML = "Esto es muy poco";
+			}	else if (nodeelementos >= 2 && nodeelementos < 4){
+				document.getElementById("msj").innerHTML = "No está mal";
+			} else if (nodeelementos <= 4){
+				document.getElementById("msj").innerHTML = "Son muchos";
+		  }
 		}
-
+		mensaje();
 	</script>
 </body>
 </html>
